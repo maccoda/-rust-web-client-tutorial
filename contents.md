@@ -26,12 +26,25 @@ from a file. We will be introduced to working with the standard library.
 In this section our goal is to be able to successfully hit the Github API. In
 doing so we will learn about dependencies (crates).
 
-## [Deserializing the Response]
+## [Deserializing the Response](3-Deserializing/README.md)
+
+In this section we want to be able to structure the data returned from the API
+call. We will learn how to interact with JSON data (and most other serialization
+targets as well). It will touch on macros and their power in deriving implementations.
 
 ## [Organizing the Project with Modules]
 
+*Adding modules*
+
 ## [Error Handling]
+
+*Added some error handling over unwrap*
 
 ## [Testing]
 
+*Find some places to do basic testing*
+
 ## [Enhancing our Client]
+
+*Allow it to do more than one function, this will be a good place to restructure
+to some more idiomatic code with structs, impls, etc.*

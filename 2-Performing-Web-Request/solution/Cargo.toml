@@ -1,0 +1,9 @@
+[package]
+name = "rust-web-client-tutorial"
+version = "0.1.0"
+authors = ["Dylan Maccora <maccora17@gmail.com>"]
+
+[dependencies]
+hyper = "0.12"
+hyper-tls = "0.3"
+reqwest = "0.9"

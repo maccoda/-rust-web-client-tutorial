@@ -5,6 +5,9 @@ client as a vehicle for familiarizing with using Rust. I will endeavour to make
 it as simple to follow through on your own but the initial usage for this is for
 a workshop style setting.
 
+The client we are going to construct is a Github one so that we are able to query
+the Rust repository.
+
 ## Intended Audience
 
 This workshop is intended for those with software background but no experience

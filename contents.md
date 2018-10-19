@@ -47,7 +47,7 @@ targets as well). It will touch on macros and their power in deriving implementa
 In this section we will focus on small refactoring using Rust's module system.
 We are going to separate our code to split our models and the logic.
 
-## [Error Handling]
+## [Error Handling](5-Error-Handling/README.md)
 
 *Added some error handling over unwrap*
 

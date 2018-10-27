@@ -2,11 +2,11 @@
     - [Getting Started](#getting-started)
     - [Reading the Token](#reading-the-token)
     - [Performing a Web Request](#performing-a-web-request)
-    - [[Deserializing the Response]](#deserializing-the-response)
-    - [[Organizing the Project with Modules]](#organizing-the-project-with-modules)
-    - [[Error Handling]](#error-handling)
+    - [Deserializing the Response](#deserializing-the-response)
+    - [Organizing the Project with Modules](#organizing-the-project-with-modules)
+    - [Error Handling](#error-handling)
+    - [Enhancing our Client](#enhancing-our-client)
     - [[Testing]](#testing)
-    - [[Enhancing our Client]](#enhancing-our-client)
 
 # Contents of this Workshop
 
@@ -49,13 +49,23 @@ We are going to separate our code to split our models and the logic.
 
 ## [Error Handling](5-Error-Handling/README.md)
 
-*Added some error handling over unwrap*
+*10 minutes*
+
+In this section we will introduce the `?` operator, used for error handling in
+Rust. We will look into providing more useful error types and providing more
+relevant contextual information on those errors.
+
+
+## [Enhancing our Client](6-Enhancing/README.md)
+
+*20 minutes*
+
+In this section we will be doing a fair bit of tweaking. At this point we have
+everything all together but it is pretty much a single function which is pretty
+hard to reuse and test. Here we will investigate mechanisms Rust has for
+providing this modularity. In particular we want to look at making a `struct`
+that can be used to obtain our information.
 
 ## [Testing]
 
 *Find some places to do basic testing*
-
-## [Enhancing our Client]
-
-*Allow it to do more than one function, this will be a good place to restructure
-to some more idiomatic code with structs, impls, etc.*

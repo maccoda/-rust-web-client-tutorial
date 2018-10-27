@@ -7,7 +7,7 @@ use std::fs::File;
 use std::io::Read;
 use std::path::Path;
 
-mod error;
+pub mod error;
 mod model;
 
 pub struct RustClient {

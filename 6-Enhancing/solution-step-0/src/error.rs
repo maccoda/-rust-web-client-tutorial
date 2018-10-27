@@ -33,6 +33,5 @@ impl fmt::Display for Error {
             Error::NetworkError(e) => fmt::Display::fmt(e, f),
             Error::JsonParseError(e) => fmt::Display::fmt(e, f),
         }
-        // write!(f, "({}, {})", self.longitude, self.latitude)
     }
 }

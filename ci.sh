@@ -2,6 +2,7 @@
 set -e
 
 script=$(dirname $0)
+test_cmd="cargo test -q"
 
 for dir in $script/*
 do
@@ -9,12 +10,12 @@ do
     echo "Testing $dir"
     cd $dir
     if [ -f "Cargo.toml" ]; then
-        cargo test
+        $test_cmd
         for sol in $(ls -d solution*)
         do
             cd $sol
-            echo "Checking solution for $dir"
-            cargo test
+            echo "Checking $sol for $dir"
+            $test_cmd
             cd ..
         done
     fi

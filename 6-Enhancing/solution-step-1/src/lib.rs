@@ -3,9 +3,9 @@ extern crate serde;
 #[macro_use]
 extern crate serde_derive;
 
-use std::env;
 use std::fs::File;
 use std::io::Read;
+use std::path::Path;
 
 mod error;
 mod model;
@@ -30,8 +30,7 @@ impl RustClient {
     }
 }
 
-pub fn obtain_token(token_path: &str) -> Result<String, error::Error> {
-    let path = env::home_dir().map(|x| x.join(token_path)).unwrap();
+pub fn obtain_token(path: &Path) -> Result<String, error::Error> {
     if path.exists() {
         let mut file = File::open(path)?;
         let mut token = String::new();

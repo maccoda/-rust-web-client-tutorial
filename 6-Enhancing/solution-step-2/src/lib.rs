@@ -30,8 +30,8 @@ impl RustClient {
     }
 }
 
-pub fn obtain_token() -> Result<String, error::Error> {
-    let path = dirs::home_dir().map(|x| x.join(".tokens/github")).unwrap();
+pub fn obtain_token(token_path: &str) -> Result<String, error::Error> {
+    let path = dirs::home_dir().map(|x| x.join(token_path)).unwrap();
     if path.exists() {
         let mut file = File::open(path)?;
         let mut token = String::new();

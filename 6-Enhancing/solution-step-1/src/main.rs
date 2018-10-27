@@ -1,6 +1,6 @@
 extern crate rust_web_client_tutorial as client;
 fn main() {
-    match client::obtain_token() {
+    match client::obtain_token(".tokens/github") {
         Err(e) => println!("Error: {}", e),
         Ok(token) => {
             let rs_client = client::RustClient::new(token);

@@ -10,10 +10,13 @@ do
     cd $dir
     if [ -f "Cargo.toml" ]; then
         cargo test
-        cd solution
-        echo "Checking solution for $dir"
-        cargo test
-        cd ..
+        for sol in $(ls -d solution*)
+        do
+            cd $sol
+            echo "Checking solution for $dir"
+            cargo test
+            cd ..
+        done
     fi
     cd ..
 

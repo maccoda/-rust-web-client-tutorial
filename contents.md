@@ -6,7 +6,7 @@
     - [Organizing the Project with Modules](#organizing-the-project-with-modules)
     - [Error Handling](#error-handling)
     - [Enhancing our Client](#enhancing-our-client)
-    - [[Testing]](#testing)
+    - [Testing](#testing)
 
 # Contents of this Workshop
 
@@ -66,6 +66,9 @@ hard to reuse and test. Here we will investigate mechanisms Rust has for
 providing this modularity. In particular we want to look at making a `struct`
 that can be used to obtain our information.
 
-## [Testing]
+## [Testing](7-Testing/README.md)
 
-*Find some places to do basic testing*
+*10-20 minutes*
+
+In this section we will introduce some basic examples for testing now that we
+have organized our code a bit better.

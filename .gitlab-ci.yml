@@ -1,3 +1,7 @@
 check:
-  image: 'rust:latest'
+  image: 'rust:1.30-slim'
   script: './ci.sh'
+  cache:
+    paths:
+      - '**/target'
+      - '**/**/target'

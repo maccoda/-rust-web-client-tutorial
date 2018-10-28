@@ -1,5 +1,5 @@
 check:
-  image: 'rust:1.30-slim'
+  image: 'rust:1.30'
   script: './ci.sh'
   cache:
     paths:

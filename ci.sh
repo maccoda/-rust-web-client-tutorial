@@ -2,7 +2,7 @@
 set -e
 
 script=$(dirname $0)
-test_cmd="cargo test -q"
+test_cmd="cargo test"
 
 for dir in $script/*
 do

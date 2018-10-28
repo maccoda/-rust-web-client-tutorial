@@ -34,5 +34,10 @@ sections with `cargo run` to see what the expected output is.
 
 Next I would navigate to the [contents] where you can get started!
 
+Whenever you are wanting to start a new section you can enter the directory and
+edit the code in place but I recommend running the `init_section.sh` script
+just to initialize the directory so you will not have to wait for the
+dependencies to compile every time you start a new section.
+
 [Rust]: https://www.rust-lang.org/en-US/
 [contents]: contents.md
